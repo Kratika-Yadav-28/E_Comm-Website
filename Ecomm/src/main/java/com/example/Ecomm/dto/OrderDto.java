@@ -1,0 +1,84 @@
+package com.example.Ecomm.dto;
+
+import java.util.Date;
+import java.util.List;
+
+public class OrderDto {
+
+    private Long id;
+    private Double totalAmount;
+    private String status;
+
+    private Date orderDate;
+    private String username;
+    private String email;
+
+    private List<OrderItemDTO> orderItems;
+
+    public OrderDto(Long id, Double totalAmount, String status, Date orderDate, List<OrderItemDTO> orderItems) {
+        this.id = id;
+        this.totalAmount = totalAmount;
+        this.status = status;
+        this.orderDate = orderDate;
+        this.orderItems = orderItems;
+    }
+
+    public OrderDto(Long id, double totalAmount, String status, Date orderDate, String s, String s1, List<OrderItemDTO> orderItems) {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Double getTotalAmount() {
+        return totalAmount;
+    }
+
+    public void setTotalAmount(Double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Date getOrderDate() {
+        return orderDate;
+    }
+
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public List<OrderItemDTO> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(List<OrderItemDTO> orderItems) {
+        this.orderItems = orderItems;
+    }
+}
